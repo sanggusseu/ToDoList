@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- JS -->
+    <script src="./js/main.js" defer></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c1c23e086f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="header__title">할 일 목록</h1>
+      </header>
+      <!-- Main -->
+      <main>
+        <form class="task-form">
+          <input
+            required
+            class="task-input"
+            type="text"
+            placeholder="할 일을 입력해주세요."
+          />
+          <button class="add-button" type="submit">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </form>
+
+        <ul class="task-list"></ul>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="count">
+          <span class="number">0</span>
+          <span>개의 할 일</span>
+        </div>
+        <button class="delete-all-button" type="button">전체 삭제</button>
+      </footer>
+    </section>
+  </body>
+</html>
